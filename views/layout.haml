@@ -13,6 +13,8 @@
   %body
     %div#wrapper        
       %div#content
+        %a{:href => "/"}
+          %h1= "IdeaLog"
         = @flash
         = yield
       %div#footer
