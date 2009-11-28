@@ -32,13 +32,12 @@ namespace 'db' do
     Person.new(:name => "jake", :email => "jake@ang.st", :url => "http://jakedahn.com").save
     Person.new(:name => "jesse", :email => "jesse@ang.st", :url => "http://overstimulate.com").save
     Person.new(:name => "danny", :email => "thesirdanny@gmail.com", :url => "http://danielnicolas.net").save
-    
-    
-    Idea.new(:idea => "idea test", :user_id => 1, :status => 0).save
-    Idea.new(:idea => "idea test", :user_id => 2, :status => 0).save
-    Idea.new(:idea => "idea test", :user_id => 3, :status => 0).save
-    Idea.new(:idea => "idea test", :user_id => 4, :status => 0).save
-    Idea.new(:idea => "idea test", :user_id => 5, :status => 0).save
+        
+    # Idea.new(:idea => "idea test", :user_id => 1, :status => 0).save
+    # Idea.new(:idea => "idea test", :user_id => 2, :status => 0).save
+    # Idea.new(:idea => "idea test", :user_id => 3, :status => 0).save
+    # Idea.new(:idea => "idea test", :user_id => 4, :status => 0).save
+    # Idea.new(:idea => "idea test", :user_id => 5, :status => 0).save
   end
   
 end
