@@ -1,0 +1,11 @@
+%div.addIdea
+  %h3 Add New Idea:
+
+  %form{:action=> "/add_idea", :method => "post"}
+    %fieldset
+      %input{:type => "hidden", :value => "0", :name => "idea[status]"}
+      %input{:type => "hidden", :value => "#{@person.id}", :name => "idea[user_id]"}
+      %fieldset
+        %label{:for => "idea"}= "Idea: "
+        %input{:id => "idea", :type => "text", :value => "", :name => "idea[idea]"}
+      %input{:id => 'submit', :type=>"submit", :value=>"Add Idea"}

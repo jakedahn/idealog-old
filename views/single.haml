@@ -1,0 +1,16 @@
+%a{:href => "/"}
+  %h1= "Idea Log"
+%div{:id => "people", :class => "single"}
+  - @people.each do |@person|
+    %div{:id => "#{@person.name}", :class => "personBlock"}
+      %div.info
+        %img{:class => "gravatar", :src => "http://gravatar.com/avatar/#{fetch_gravatar(@person.email)}", :width => "40px", :height => "40px" }
+        %a{:href => "/#{@person.name}"}
+          %h2= @person.name
+      - fetch_ideas(@person.id)
+      %div.ideas
+        %h3= "Ideas"
+        %ul.ideas    
+          - @ideas.each do |@idea|
+            %li= "#{@idea.idea}"
+        
